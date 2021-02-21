@@ -1,4 +1,4 @@
-/ / Select elements here
+// Select elements here
 const video = document.getElementById('video');
 const poster = document.getElementsByClassName('poster')[0];
 const videoControls = document.getElementById('video-controls');
