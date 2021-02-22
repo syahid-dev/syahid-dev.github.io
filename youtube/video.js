@@ -63,7 +63,7 @@ function formatTime(timeInSeconds) {
   var minutes  = Math.floor(timeInSeconds / 60);
   var hours    = Math.floor(minutes / 60) + ":";
   var seconds  = Math.floor(timeInSeconds - minutes * 60);
-  if(minutes > 60){ minutes = (minutes - 60) }
+  if(minutes > 59){ minutes = (minutes - 60) }
   if(seconds < 10){ seconds = "0"+seconds; }
   if(minutes < 10){ minutes = "0"+minutes; }
 
