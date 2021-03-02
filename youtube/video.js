@@ -349,10 +349,4 @@ videoContainer.style.display = "";
 video.autoplay = true;
 video.load();
 });
-video.addEventListener('ended', function() {
-/*
-poster.style.display = "";
-videoContainer.style.display = "none";
-*/
-});
 setposter();
