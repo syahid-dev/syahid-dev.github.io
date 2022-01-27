@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head_bar">
+    <h1 class="head_bar__title">Bookshelf Apps</h1>
+</header>
+<main>
+    <div class="modal">
+        <div class="modal-content animate">
+            <div class="title-container">
+                <b class="title-text">Edit Book</b>
+                <button title="Close" class="close">&times;</button>
+            </div>
+            <div class="container">
+                <form id="updateBook">
+                    <label for="judul">Title</label>
+                    <input type="text" id="judul"/><br/>
+                    <label for="penulis">Author</label>
+                    <input type="text" id="penulis"/><br>
+                    <label for="tahun">Year</label>
+                    <input type="number" id="tahun"/><br/>
+                    <button type="submit" class="submitbtn">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="input_section">
+        <h2>Add New Book</h2>
+        <form id="inputBook">
+            <div class="input">
+                <label for="inputBookTitle">Title</label>
+                <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookAuthor">Author</label>
+                <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+                <label for="inputBookYear">Year</label>
+                <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="input_inline">
+                <label for="inputBookIsComplete">Finished reading</label>
+                <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="bookSubmit" type="submit">Add Book to List <span>Unfinished reading book(s)</span></button>
+        </form>
+    </section>
+
+    <section class="search_section">
+        <h2>Search Book (Optional)</h2>
+        <div id="searchBook">
+            <label for="searchBookTitle">Title</label>
+            <input id="searchBookTitle" type="text">
+        </div>
+    </section>
+
+    <section class="book_shelf">
+        <h2>Unfinished reading book(s)</h2>
+
+        <div id="incompleteBookshelfList" class="book_list"></div>
+    </section>
+
+    <section class="book_shelf">
+        <h2>Finished Reading Book(s)</h2>
+    </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
